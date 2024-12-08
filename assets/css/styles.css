@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fff;
+    min-height: 100vh;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #1f1f1f;
+    margin: 0;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: inherit;
+    appearance: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.content {
+    height: 100vh;
+}
+
+.content__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 32px;
+    background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%);
+}
+
+.container {
+    max-width: 734px;
+    width: 100%;
+}
+
+.main-content {
+    background: #121212;
+    color: #fff;
+    border-radius: 8px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 32px;
+    padding-bottom: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-image {
+    background-color: transparent;
+    height: 36px;
+    fill: #fff;
+}
+
+.title {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 32px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.social-list {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+    margin: 0px auto;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 11px 31px;
+    border-radius: 99px;
+    border: solid 1px #818181;
+}
+
+.form-input:hover,
+.social-link:hover {
+    border: 1px solid #fff;
+}
+
+.social-act {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin: auto;
+}
+
+.separate {
+    margin: 32px 100px;
+    border: 1px solid rgb(41, 41, 41);
+    width: 80%;
+}
+
+.form {
+    width: 324px;
+    margin: 0px auto;
+    padding-bottom: 8px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+}
+
+.form-label {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.form-input {
+    border-radius: 4px;
+    border: 1px solid #7c7c7c;
+    padding: 15px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    background: inherit;
+    color: #fff;
+    width: 100%;
+    position: relative;
+}
+
+.hidden {
+    width: 24px;
+    height: 24px;
+    fill: #b3b3b3;
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hidden:hover {
+    transform: scale(1.04);
+    fill: #fff;
+}
+
+.form-group:has(:invalid:not(:placeholder-shown)) .form-error {
+    display: flex;
+}
+
+.form-error {
+    display: none;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-error__icon {
+    height: 16px;
+    object-fit: cover;
+}
+
+.form-error__icon1 {
+    margin-top: -15px;
+}
+
+.form-error__text {
+    color: #f3727f;
+    font-size: 1.3rem;
+}
+
+.login-btn {
+    background: #1ed760;
+    min-width: 324px;
+    min-height: 48px;
+    text-align: center;
+    border-radius: 999px;
+    padding: 8px 24px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #3be477;
+    transform: scale(1.05);
+}
+
+.reminder {
+    margin-top: 32px;
+}
+
+.sign-up__link,
+.reminder__text {
+    font-weight: 400;
+    color: #fff;
+}
+
+.sign-up__link:hover,
+.reminder__text:hover {
+    color: #1ed760;
+}
+
+.sign-up {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 16px;
+}
+
+.sign-up__text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #b3b3b3;
+}
+
+.footer {
+    color: rgb(179, 179, 179);
+    text-align: center;
+    padding: 23px;
+    background: #121212;
+}
+
+.footer__text {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.footer__underline {
+    color: rgb(179, 179, 179);
+}
