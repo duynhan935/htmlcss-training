@@ -39,15 +39,9 @@ ol {
     list-style: none;
 }
 
-.content {
-    height: 100vh;
-}
-
 .content__inner {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding: 32px;
     background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%);
 }
@@ -70,29 +64,23 @@ ol {
 .logo {
     padding-top: 32px;
     padding-bottom: 8px;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .logo-image {
-    background-color: transparent;
     height: 36px;
     fill: #fff;
 }
 
 .title {
-    text-align: center;
     margin-top: 0px;
     margin-bottom: 32px;
     font-size: 2em;
-    font-weight: bold;
 }
 
 .social-list {
     padding: 0px;
-    display: flex;
-    flex-direction: column;
     width: 324px;
     margin: 0px auto;
 }
@@ -108,6 +96,7 @@ ol {
     padding: 11px 31px;
     border-radius: 99px;
     border: solid 1px #818181;
+    text-decoration: none;
 }
 
 .form-input:hover,
@@ -146,6 +135,11 @@ ol {
     line-height: 1.1;
 }
 
+.form-group__inner{
+    position: relative;
+}
+
+
 .form-input {
     border-radius: 4px;
     border: 1px solid #7c7c7c;
@@ -155,7 +149,6 @@ ol {
     background: inherit;
     color: #fff;
     width: 100%;
-    position: relative;
 }
 
 .hidden {
@@ -164,7 +157,7 @@ ol {
     fill: #b3b3b3;
     position: absolute;
     top: 12px;
-    right: 5px;
+    right: 10px;
     z-index: 1;
     cursor: pointer;
 }
