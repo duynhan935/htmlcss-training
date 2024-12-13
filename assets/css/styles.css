@@ -25,12 +25,13 @@ body {
 
 button {
     background: none;
+    outline: none;
     border: none;
     padding: 0;
     margin: 0;
     font: inherit;
     color: inherit;
-    cursor: inherit;
+    cursor: pointer;
     appearance: none;
 }
 
@@ -135,10 +136,9 @@ ol {
     line-height: 1.1;
 }
 
-.form-group__inner{
+.form-group__inner {
     position: relative;
 }
-
 
 .form-input {
     border-radius: 4px;
@@ -152,29 +152,34 @@ ol {
 }
 
 .hidden {
-    width: 24px;
-    height: 24px;
-    fill: #b3b3b3;
     position: absolute;
-    top: 12px;
-    right: 10px;
-    z-index: 1;
-    cursor: pointer;
+    top: 55%;
+    transform: translateY(-55%);
+    display: flex;
+    fill: #656565;
+    right: 12px;
 }
 
-.hidden:hover {
+.hidden__btn {
+    width: 24px;
+    height: 24px;
+}
+
+.hidden__btn:hover {
     transform: scale(1.04);
     fill: #fff;
 }
 
-.form-group:has(:invalid:not(:placeholder-shown)) .form-error {
-    display: flex;
+.hidden__img {
+    width: 100%;
+    height: 100%;
 }
 
 .form-error {
     display: none;
     align-items: center;
     gap: 5px;
+    margin-top: 8px;
 }
 
 .form-error__icon {
@@ -182,16 +187,33 @@ ol {
     object-fit: cover;
 }
 
-.form-error__icon1 {
-    margin-top: -15px;
-}
-
 .form-error__text {
     color: #f3727f;
     font-size: 1.3rem;
 }
 
-.login-btn {
+.form-group.has-error .form-error {
+    display: flex;
+}
+
+.form-group--remember-me {
+    flex-direction: row;
+    gap: 10px;
+}
+
+.form-error--global {
+    display: none;
+    color: #f3727f;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.form-error--global.active {
+    display: block;
+}
+
+.form-button {
     background: #1ed760;
     min-width: 324px;
     min-height: 48px;
@@ -201,15 +223,16 @@ ol {
     font-weight: 600;
     color: #000;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-.login-btn:hover {
+.form-button:hover {
     background: #3be477;
     transform: scale(1.05);
 }
 
 .reminder {
-    margin-top: 32px;
+    margin-top: 20px;
 }
 
 .sign-up__link,
