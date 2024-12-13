@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    const togglePasswordIcon = document.getElementById("toggle-password-icon");
     togglePasswordBtn.addEventListener("click", (e) => {
         e.preventDefault();
         if (passwordInput.type === "password") {
