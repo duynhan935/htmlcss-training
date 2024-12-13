@@ -73,8 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (isEmailValid && isPasswordValid) {
             if (rememberMeCheckbox.checked) {
                 localStorage.setItem("rememberedEmail", emailInput.value.trim());
-            } else {
-                localStorage.removeItem("rememberedEmail");
             }
             globalError.classList.add("active");
         } else {
